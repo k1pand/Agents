@@ -69,5 +69,24 @@ namespace Agents.Windows
         {
             Load_data("");
         }
+
+        private void Filtr_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Filtr.Text.ToString() == "МФО")
+            {
+                list.Visibility = System.Windows.Visibility.Collapsed;
+            }
+   
+        }
+
+        private void Sort_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (Sort.Text)
+            {
+                case "Наименование":
+
+                    break;
+            }
+        }
     }
 }

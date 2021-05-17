@@ -32,7 +32,7 @@
                   HorizontalAlignment="Left" 
                   Margin="360,9,0,0" 
                   VerticalAlignment="Top" 
-                  Width="155">
+                  Width="155" SelectionChanged="Sort_SelectionChanged">
             <ComboBoxItem Content="Наименование" HorizontalAlignment="Left" Width="Auto"/>
             <ComboBoxItem Content="Размер скидки" HorizontalAlignment="Left" Width="Auto"/>
             <ComboBoxItem Content="Приоритет агента" HorizontalAlignment="Left" Width="Auto"/>
@@ -43,7 +43,7 @@
                   Margin="539,10,0,0" 
                   VerticalAlignment="Top"
                   Width="120" 
-                  SelectedIndex="0">
+                  SelectedIndex="0" SelectionChanged="Filtr_SelectionChanged">
             <ComboBoxItem Content="Все типы" HorizontalAlignment="Left" Width="Auto"/>
             <ComboBoxItem Content="МФО" HorizontalAlignment="Left" Width="Auto"/>
             <ComboBoxItem Content="ООО" HorizontalAlignment="Left" Width="Auto"/>

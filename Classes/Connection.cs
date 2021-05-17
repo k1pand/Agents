@@ -8,6 +8,6 @@ namespace Agents.Classes
 {
     class Connection
     {
-        public static string String { get; } = "Data Source = tcp:CL303-20; Initial Catalog = Agents; Integrated Security = true"; //подключение к БД через вызов Connection
+        public static string String { get; } = "Data Source = tcp:CL303-20; Initial Catalog = Agents; uid=darkhole; pwd=van; Integrated Security = true";  //подключение к БД через вызов Connection
     }
 }
