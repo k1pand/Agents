@@ -15,6 +15,7 @@ namespace Agents.Windows
         public Main()
         {
             InitializeComponent();
+
         }
 
         internal void Load_data(string s)
@@ -32,7 +33,8 @@ namespace Agents.Windows
                                                          FROM Agent INNER JOIN
                                                               AgentType ON Agent.AgentTypeID = AgentType.ID INNER JOIN
                                                               ProductSale ON Agent.ID = ProductSale.AgentID 
-                                                              WHERE Agent.Title like '%{Search.Text}%' or Agent.Phone like '{Search.Text}%' ORDER BY NEWID()" + s, connection);
+                                                              WHERE (Agent.Title like '%{Search.Text}%' or Agent.Phone like '%{Search.Text}%') and AgentType.Title like '{(Filtr.SelectedIndex == 0 ? "" : ((ComboBoxItem)Filtr.SelectedItem).Content)}%'
+                                                         ORDER BY {(Sort.SelectedIndex == 0 ? "Agent.ID" : (Sort.SelectedIndex == 1 ? "Expr1" : "Priority"))}" + s, connection);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {
@@ -72,20 +74,14 @@ namespace Agents.Windows
 
         private void Filtr_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (Filtr.Text.ToString() == "МФО")
-            {
-                list.Visibility = System.Windows.Visibility.Collapsed;
-            }
-   
+            Load_data("");
         }
 
         private void Sort_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            switch (Sort.Text)
+            if (Filtr != null)
             {
-                case "Наименование":
-
-                    break;
+                Load_data("");
             }
         }
     }
