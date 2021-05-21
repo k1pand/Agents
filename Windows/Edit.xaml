@@ -7,16 +7,36 @@
         mc:Ignorable="d"
         Title="" Height="450" Width="800" Closing="Window_Closing" FontFamily="Century Gothic" FontSize="14" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Наименование" HorizontalAlignment="Left" Margin="327,66,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="451,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Тип агента" HorizontalAlignment="Left" Margin="327,104,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="451,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="327,148,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="451,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="327,195,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="451,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="327,233,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="451,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Наименование" HorizontalAlignment="Left" Margin="391,21,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="515,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Тип агента" HorizontalAlignment="Left" Margin="391,59,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Type" HorizontalAlignment="Left" Height="23" Margin="515,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Приоритет" HorizontalAlignment="Left" Margin="391,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Priority" HorizontalAlignment="Left" Height="23" Margin="515,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="391,150,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Adress" HorizontalAlignment="Left" Height="52" Margin="515,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="ИНН" HorizontalAlignment="Left" Margin="391,212,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="INN" HorizontalAlignment="Left" Height="23" Margin="515,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" Height="172" Margin="57,70,0,0" VerticalAlignment="Top" Width="172" Source="/Agents;component/Resources/picture.png"/>
+        <Label Content="КПП" HorizontalAlignment="Left" Margin="391,253,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="KPP" HorizontalAlignment="Left" Height="23" Margin="515,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Имя директора" HorizontalAlignment="Left" Margin="391,294,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DirectorName" HorizontalAlignment="Left" Height="23" Margin="515,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="391,333,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Phone" HorizontalAlignment="Left" Height="23" Margin="515,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="email" HorizontalAlignment="Left" Margin="392,371,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Height="23" Margin="516,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="ProductCount" HorizontalAlignment="Left" Height="23" Margin="83,364,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="692,322,-5,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.5,0.5" Click="Save_Click" Height="34">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
 
     </Grid>
 </Window>

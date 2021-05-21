@@ -15,7 +15,7 @@
         ResizeMode="CanMinimize">
     
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden" 
+        <ScrollViewer VerticalScrollBarVisibility="Visible" 
                       Margin="0,50,0,0">
             <WrapPanel x:Name="list"/>
         </ScrollViewer>

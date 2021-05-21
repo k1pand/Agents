@@ -15,5 +15,10 @@ namespace Agents.Windows
         {
             Main.Show();
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Будет когда-то работать");
+        }
     }
 }

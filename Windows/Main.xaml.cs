@@ -29,11 +29,18 @@ namespace Agents.Windows
                                                               ProductSale.ProductCount, 
                                                               Agent.Phone, 
                                                               Agent.Priority,
-                                                              Agent.Logo
+                                                              Agent.Logo,
+                                                              Agent.ID,
+                                                              Agent.Address,
+                                                              Agent.INN,
+                                                              Agent.KPP,
+                                                              Agent.DirectorName,
+                                                              Agent.Email
                                                          FROM Agent INNER JOIN
                                                               AgentType ON Agent.AgentTypeID = AgentType.ID INNER JOIN
                                                               ProductSale ON Agent.ID = ProductSale.AgentID 
-                                                              WHERE (Agent.Title like '%{Search.Text}%' or Agent.Phone like '%{Search.Text}%') and AgentType.Title like '{(Filtr.SelectedIndex == 0 ? "" : ((ComboBoxItem)Filtr.SelectedItem).Content)}%'
+                                                              WHERE (Agent.Title like '%{Search.Text}%' or Agent.Phone like '%{Search.Text}%' or Agent.Email like '%{Search.Text}%') 
+                                                              AND AgentType.Title like '{(Filtr.SelectedIndex == 0 ? "" : ((ComboBoxItem)Filtr.SelectedItem).Content)}%'
                                                          ORDER BY {(Sort.SelectedIndex == 0 ? "Agent.ID" : (Sort.SelectedIndex == 1 ? "Expr1" : "Priority"))}" + s, connection);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
@@ -41,12 +48,18 @@ namespace Agents.Windows
                     while (reader.Read())
                     {
                         Layout agent = new Layout();
-                        agent.Type.Content = reader[0] + " | ";
+                        agent.Type.Content = reader[0];
                         agent.Name.Content= reader[1].ToString();
-                        agent.ProductCount.Content = reader[2] + " продаж за год";
+                        agent.ProductCount.Content = reader[2];
                         agent.Phone.Content = reader[3];
                         agent.Priority.Content = reader[4];
                         agent.Logo.Source = new BitmapImage(new Uri(Directory.GetCurrentDirectory() + "\\" + reader[5].ToString().Replace(" agents", "agents")));
+                        agent.ID.Content = reader[6];
+                        agent.Adress.Content = reader[7];
+                        agent.INN.Content = reader[8];
+                        agent.KPP.Content = reader[9];
+                        agent.DirectorName.Content = reader[10];
+                        agent.Email.Content = reader[11];
                         agent.Main = this;
                         list.Children.Add(agent);
                     }

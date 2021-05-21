@@ -14,6 +14,6 @@ C:\Users\303\source\repos\Agents\obj\Debug\Windows\Main.g.cs
 C:\Users\303\source\repos\Agents\obj\Debug\Windows\Main.baml
 C:\Users\303\source\repos\Agents\obj\Debug\Controls\Layout.g.cs
 C:\Users\303\source\repos\Agents\obj\Debug\Controls\Layout.baml
-C:\Users\303\source\repos\Agents\obj\Debug\Agents.csprojAssemblyReference.cache
 C:\Users\303\source\repos\Agents\obj\Debug\Windows\Edit.g.cs
 C:\Users\303\source\repos\Agents\obj\Debug\Windows\Edit.baml
+C:\Users\303\source\repos\Agents\obj\Debug\Agents.csprojAssemblyReference.cache
