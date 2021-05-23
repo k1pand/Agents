@@ -21,7 +21,7 @@ namespace Agents.Controls
             edit.Type.Text = (string)Type.Content;
             edit.Priority.Text = Priority.Content.ToString();
             edit.Phone.Text = (string)Phone.Content;
-            edit.ProductCount.Text = (string)ProductCount.Content;
+            edit.ProductCount.Text = (string)ProductCount.Content.ToString();
             edit.Phone.Text = Phone.Content.ToString();
             edit.Logo.Source = Logo.Source;
             edit.Adress.Text = (string)Adress.Content;

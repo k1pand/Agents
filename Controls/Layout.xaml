@@ -9,7 +9,7 @@
     <Grid Background="#FFFFE9F9">
         <Label x:Name="Type" Content="Тип" HorizontalAlignment="Left" Margin="211,35,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14"/>
         <Label x:Name="Name" Content="Наименование агента" HorizontalAlignment="Left" Margin="271,35,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14"/>
-        <Label x:Name="ProductCount" Content="10 продаж за год" HorizontalAlignment="Left" Margin="211,66,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14"/>
+        <Label x:Name="ProductCount" Content="10 " HorizontalAlignment="Left" Margin="211,66,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14"/>
         <Label x:Name="Phone" Content="+ 7 111 111 11 11" HorizontalAlignment="Left" Margin="212,102,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14"/>
         <Label Content="Приоритетность:" HorizontalAlignment="Left" Margin="212,134,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="14"/>
         <Label x:Name="Discount" Content="10%" HorizontalAlignment="Left" Margin="668,44,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="18"/>
@@ -24,6 +24,7 @@
         <Label x:Name="KPP" Content="Label" HorizontalAlignment="Left" Margin="516,89,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Label x:Name="DirectorName" Content="Label" HorizontalAlignment="Left" Margin="516,117,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Label x:Name="Email" Content="Label" HorizontalAlignment="Left" Margin="516,143,0,0" VerticalAlignment="Top" Visibility="Hidden" Loaded="Email_Loaded"/>
+        <Label Content="продаж за год" HorizontalAlignment="Left" Margin="240,66,0,0" VerticalAlignment="Top" FontFamily="Century Gothic"/>
 
     </Grid>
 </UserControl>
