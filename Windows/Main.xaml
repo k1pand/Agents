@@ -13,7 +13,7 @@
         FontSize="14" 
         FontFamily="Century Gothic" 
         ResizeMode="CanMinimize">
-    
+
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Visible" 
                       Margin="0,50,0,0">
@@ -22,27 +22,27 @@
 
         <TextBox x:Name="Search" 
                  HorizontalAlignment="Left" 
-                 Height="23" Margin="102,9,0,0" 
+                 Height="23" Margin="88,9,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top"
                  Width="173" 
                  FontFamily="Century Gothic" TextChanged="Search_TextChanged"/>
-        
+
         <ComboBox x:Name="Sort" 
                   HorizontalAlignment="Left" 
-                  Margin="360,9,0,0" 
+                  Margin="346,9,0,0" 
                   VerticalAlignment="Top" 
                   Width="155" 
                   SelectedIndex="0"
                   SelectionChanged="Sort_SelectionChanged" TabIndex="3">
-            <ComboBoxItem Content="" HorizontalAlignment="Left" Width="153"/>
-            <ComboBoxItem Content="Наименование" HorizontalAlignment="Left" Width="Auto"/>
-            <ComboBoxItem Content="Приоритет агента" HorizontalAlignment="Left" Width="Auto"/>
+            <ComboBoxItem Content="(без сортировки)" HorizontalAlignment="Left" Width="153"/>
+            <ComboBoxItem Content="По наименование" HorizontalAlignment="Left" Width="Auto"/>
+            <ComboBoxItem Content="По приоритету агента" HorizontalAlignment="Left" Width="Auto"/>
         </ComboBox>
 
         <ComboBox x:Name="Filtr" 
                   HorizontalAlignment="Left" 
-                  Margin="539,10,0,0" 
+                  Margin="525,10,0,0" 
                   VerticalAlignment="Top"
                   Width="120" 
                   SelectedIndex="0" SelectionChanged="Filtr_SelectionChanged" TabIndex="4">
@@ -54,8 +54,8 @@
             <ComboBoxItem Content="ОАО" HorizontalAlignment="Left" Width="Auto"/>
             <ComboBoxItem Content="ПАО" HorizontalAlignment="Left" Width="Auto"/>
         </ComboBox>
-        <Button x:Name="Add" Content="Добавить" HorizontalAlignment="Left" Margin="689,10,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
-        <Label Content="Поиск:" HorizontalAlignment="Left" Margin="40,6,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Add" Content="Добавить" HorizontalAlignment="Left" Margin="675,10,0,0" VerticalAlignment="Top" Width="75" Click="Add_Click"/>
+        <Label Content="Поиск:" HorizontalAlignment="Left" Margin="26,6,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -60,15 +60,15 @@ namespace Agents.Controls
             {
                 Discount.Content = "0%";
             }
-            else if (int.Parse(ProductCount.Content.ToString()) > 5 && int.Parse(ProductCount.Content.ToString()) < 10)
+            else if (int.Parse(ProductCount.Content.ToString()) >= 5 && int.Parse(ProductCount.Content.ToString()) < 10)
             {
                 Discount.Content = "5%";
             }
-            else if (int.Parse(ProductCount.Content.ToString()) > 5 && int.Parse(ProductCount.Content.ToString()) < 9)
+            else if (int.Parse(ProductCount.Content.ToString()) >= 10 && int.Parse(ProductCount.Content.ToString()) < 20)
             {
                 Discount.Content = "10%";
             }
-            else if (int.Parse(ProductCount.Content.ToString()) > 10 && int.Parse(ProductCount.Content.ToString()) < 20)
+            else if (int.Parse(ProductCount.Content.ToString()) >= 20 && int.Parse(ProductCount.Content.ToString()) < 25)
             {
                 Discount.Content = "20%";
             }
