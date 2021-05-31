@@ -5,10 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Agents.Windows"
         mc:Ignorable="d"
-        Title="" Height="450" Width="800" Closing="Window_Closing" FontFamily="Century Gothic" FontSize="14" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="" 
+        Height="450" 
+        Width="800" 
+        Closing="Window_Closing" 
+        FontFamily="Century Gothic" 
+        FontSize="14" 
+        ResizeMode="CanMinimize" 
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" 
+                    Value="Century Gothic" />
+            <Setter Property="FontSize" 
+                    Value="14" />
+            <Setter Property="Background" 
+                    Value="#FFE9F9"/>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" 
+                         Value="True">
+                    <Setter Property="Foreground" 
+                            Value="#B175EE"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-        <Label Content="Наименование" HorizontalAlignment="Left" Margin="391,21,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="515,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Наименование" 
+               HorizontalAlignment="Left" 
+               Margin="391,21,0,0" 
+               VerticalAlignment="Top"/>
+        <TextBox x:Name="Name" 
+                 HorizontalAlignment="Left" 
+                 Height="23" 
+                 Margin="515,25,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="200"/>
         <Label Content="Тип агента" HorizontalAlignment="Left" Margin="391,59,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Type" HorizontalAlignment="Left" Height="23" Margin="515,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
         <Label Content="Приоритет" HorizontalAlignment="Left" Margin="391,103,0,0" VerticalAlignment="Top"/>
